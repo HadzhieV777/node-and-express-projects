@@ -11,11 +11,11 @@ const getSingleTask = (req, res) => {
 };
 
 const updateTask = (req, res) => {
-  res.send("Get single task");
+  res.send("Update single task");
 };
 
 const deleteTask = (req, res) => {
-  res.send("Get single task");
+  res.send("Delete single task");
 };
 
 module.exports = {
