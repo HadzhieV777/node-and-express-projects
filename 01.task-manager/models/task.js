@@ -14,6 +14,5 @@ const TaskSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model("Task", TaskSchema);
-// A model is a class with which we construct documents. In this case, each document will be a
-// kitten with properties and behaviors as declared in our schema.
+// A model is a class with which we construct documents. 
 // The model is a wrapper for the schema
