@@ -24,4 +24,3 @@ const start = async () => {
 
 start()
 
-// 01: 16: 15
