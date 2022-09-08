@@ -3,12 +3,16 @@ const app = express();
 const tasksRoutes = require("./routes/tasks.js");
 const connectDB = require("./db/connect.js");
 require('dotenv').config()
+const notFound = require("./middlewares/not-found.js")
 
 //  Middlewares
+app.use(express.static('./public'))
 app.use(express.json());
 
 // Routes
 app.use("/api/v1/tasks", tasksRoutes);
+app.use(notFound)
+
 
 const start = async () => {
   try {
@@ -23,4 +27,6 @@ const start = async () => {
 };
 
 start()
+
+// 02: 37: 02
 
